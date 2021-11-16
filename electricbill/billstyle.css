@@ -1,0 +1,30 @@
+body {
+  font-family: Verdana;
+  background-color: rgba(230, 173, 221, 0.411);
+}
+.getButton {
+  background-color: #010101 !important;
+
+  transition: background-color 1s, border 1s;
+  color: white !important;
+}
+
+.getButton:hover {
+  border: 1.5px solid white;
+  background-color: #353535 !important;
+  color: white !important;
+}
+p {
+  display: table-row;
+}
+label {
+  display: table-cell;
+}
+input {
+  display: table-cell;
+}
+.bill {
+  position: absolute;
+  float: right;
+  left: 80px;
+}
