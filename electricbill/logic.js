@@ -23,23 +23,26 @@ let c1,c2,c3,c4;
 const calc = () => {
     let units = document.getElementById("units").value;
     let state = document.getElementById("states").value;
-    if (state == "AP"){
+    switch (state){
+        case 'AP' :
         c1 = 2.6;
         c2 = 5.4;
         c3 = 7.1;
         c4 = 7.95;
-    }
-    else if (state == "TA"){
+        break;
+    
+        case 'TA' :
         c1 = 3.3;
         c2 = 4.3;
         c3 = 7.2;
         c4 = 8.5;
-    }
-    else if (state == "KA"){
+        break;
+        case 'KA' :
         c1 = 5.2;
         c2 = 6.75;
         c3 = 7.8;
         c4 = 8.2;
+        break;
     }
     let bill = calculateBill(units);
     console.log(bill);
