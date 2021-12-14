@@ -8,13 +8,14 @@
     <style>
       .user {
         display: flex;
-        background: #f4f4f4;
+        background: #dad1d1;
         padding: 10px;
         margin-bottom: 10px;
       }
 
       .user ul {
         list-style: none;
+        /* background: rgb(187, 184, 19); */
       }
     </style>
   </head>
@@ -43,13 +44,16 @@
                 '<div class= "user">' +
                 '<img src= "' +
                 users[i].avatar_url +
-                '" width= "70" height ="70">' +
+                '" width= "100" height ="100">' +
                 "<ul>" +
                 "<li>ID: " +
                 users[i].id +
                 "</li>" +
                 "<li>Login: " +
                 users[i].login +
+                "</li>" +
+                "<li> PhoneNumber: " +
+                users[i].phnum +
                 "</li>" +
                 "</ul>" +
                 "</div>";
