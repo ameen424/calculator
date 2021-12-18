@@ -12,6 +12,7 @@ csvForm.addEventListener("submit", (e: Event) => {
   const input = csvFile.files[0];
 
   csvReader.onload = function (evt) {
+    //
     const text = evt.target.result;
 
     if (typeof text === "string" || text instanceof String) {
