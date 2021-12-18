@@ -1,11 +1,11 @@
-var sam = ['prince', 'jack', 'ameen'];
+var sam = ["prince", "jack", "ameen"];
 for (var _i = 0, sam_1 = sam; _i < sam_1.length; _i++) {
     var j = sam_1[_i];
     console.log(j.toUpperCase());
 }
 var act;
-act = ['mack', 24, 4, 565, 'qualified'];
-act.push('btech');
+act = ["mack", 24, 4, 565, "qualified"];
+act.push("btech");
 act.pop();
 act.unshift("final year");
 console.log(act);

@@ -1,4 +1,5 @@
-var tup = [10, 'prince', 'ameen', 'btech', 'cse', 18504, 'jack', 'sam', 'Atom', 'Xereal', 'slack', 15, 25, 726, 7262];
+"use strict";
+let tup = [10, 'prince', 'ameen', 'btech', 'cse', 18504, 'jack', 'sam', 'Atom', 'Xereal', 'slack', 15, 25, 726, 7262];
 tup.push(24);
 tup.push('SSITS');
 tup.push('RCT');

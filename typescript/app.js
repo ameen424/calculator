@@ -1,9 +1,10 @@
+"use strict";
 function add(n1, n2) {
     return n1 + n2;
 }
-var number1 = 5;
-var number2 = 2.8;
-var result = add(number1, number2);
+let number1 = 5;
+let number2 = 2.8;
+let result = add(number1, number2);
 console.log(result);
 // if condition
 function mul(a, b) {
@@ -12,7 +13,7 @@ function mul(a, b) {
     }
     return a * b;
 }
-var num1 = 86;
-var num2 = 612;
-var mult = mul(num1, num2);
+const num1 = 86;
+const num2 = 612;
+const mult = mul(num1, num2);
 console.log(mult);

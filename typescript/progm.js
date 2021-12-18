@@ -1,14 +1,15 @@
+"use strict";
 // Basic Types
-var id = 24;
-var company = 'Atom';
-var x = 'employe';
+let id = 24;
+let company = 'Atom';
+let x = 'employe';
 // Tuples
-var person = [1, 'ameen', true];
+let person = [1, 'ameen', true];
 // Tuple Array
-var employee;
+let employee;
 employee = [[1, 'john'], [2, 'jack'], [3, 'prince']];
 // Union 
-var pid;
+let pid;
 pid = '22';
 // Enum
 var Direction1;

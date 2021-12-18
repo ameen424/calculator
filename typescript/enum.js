@@ -1,3 +1,4 @@
+"use strict";
 var PrintMedia;
 (function (PrintMedia) {
     PrintMedia[PrintMedia["Newspaper"] = 1] = "Newspaper";
@@ -10,7 +11,7 @@ function getMedia(mediaName) {
         return PrintMedia.Magazine;
     }
 }
-var mediaType = getMedia('NDTV');
+let mediaType = getMedia('NDTV');
 console.log(mediaType);
 function getPrintMediacode(mediaName) {
     if (mediaName === 'newsletter') {
