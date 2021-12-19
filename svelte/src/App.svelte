@@ -1,21 +1,33 @@
 <script>
-	import Feedback from "./components/Feedback.svelte";
+	
+	import Csvreader from "./components/Csvreader.svelte";
+	// import Table from "./components/Table.svelte";
+    // import Form from "./components/Form.svelte";
+
+	// let id ;
+	// let name ='';
+	// let price = 5;
+
+	// function edit(event){
+	// 	({id, name, price } = event.detail);
+	// }
 </script>
 
 <main>
-	<Feedback />
+	<!-- <h1>Product Details</h1>
+	<Form bind:price bind:id bind:name/>
+
+	<Table  on:edit={edit}/> -->
+   <Csvreader />
 </main>
-
 <style>
-	main {
-		
-		padding: 1em;
-		max-width: 100%;
-		margin: 0 auto;
+   main {
+	  flex: 1;
+	  align-content: center;
+	  justify-content: center;
+	  width: 80%;
+	  margin: 0 auto;
 	}
-	*{
-		background-color: rgb(6, 6, 126);
-	}
-	
-
-</style>
+  </style>
+  
+ 

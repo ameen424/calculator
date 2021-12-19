@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-dsv": "^2.0.2",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
@@ -18,6 +19,9 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0"
+    "csv2table": "^0.1.2",
+    "sirv-cli": "^1.0.0",
+    "svelte-tabular-table": "^1.0.6",
+    "upload-csv-svelte": "^0.0.4"
   }
 }
