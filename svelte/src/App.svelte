@@ -1,5 +1,6 @@
 <script>
-  import Csvreader from "./components/Csvreader.svelte";
+  import Sort from "./components/Sort.svelte";
+  // import Csvreader from "./components/Csvreader.svelte";
   // import Table from "./components/Table.svelte";
   // import Form from "./components/Form.svelte";
 
@@ -17,8 +18,8 @@
 	<Form bind:price bind:id bind:name/>
 
 	<Table  on:edit={edit}/> -->
-  <h1>CSV Reader</h1>
-  <Csvreader />
+  <h1>My File</h1>
+  <Sort />
 </main>
 
 <style>

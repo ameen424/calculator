@@ -10,7 +10,7 @@
       if (a[colIndex] === b[colIndex]) {
         return 0;
       } else {
-        return a[colIndex] < b[colIndex] ? -1 : 1;
+        return a[colIndex] < b[colIndex] ? -1 : 1; // terinary operator
       }
     }
 
