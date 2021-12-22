@@ -1,5 +1,6 @@
 <script>
-  import Sort from "./components/Sort.svelte";
+  import Api from "./components/Api.svelte";
+  // import Sort from "./components/Sort.svelte";
   // import Csvreader from "./components/Csvreader.svelte";
   // import Table from "./components/Table.svelte";
   // import Form from "./components/Form.svelte";
@@ -19,7 +20,7 @@
 
 	<Table  on:edit={edit}/> -->
   <h1>My File</h1>
-  <Sort />
+  <Api />
 </main>
 
 <style>
