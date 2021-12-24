@@ -25,6 +25,7 @@
       <tr>
         <td>Id</td>
         <td>Login</td>
+        <td>Image</td>
       </tr>
       {#each getdata as user}
         <tr>
