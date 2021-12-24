@@ -1,4 +1,4 @@
-let name1 = [11, 4, 54, 48, 24];
+let name1 = [54, 11, 4, 54, 48, 24];
 let name2 = sortArrays(name1);
 // name1.sort(abc);
 

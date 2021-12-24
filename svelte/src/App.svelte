@@ -1,5 +1,6 @@
 <script>
-  import Api from "./components/Api.svelte";
+  import Gitusers from "./components/Gitusers.svelte";
+  // import Api from "./components/Api.svelte";
   // import Sort from "./components/Sort.svelte";
   // import Csvreader from "./components/Csvreader.svelte";
   // import Table from "./components/Table.svelte";
@@ -19,8 +20,8 @@
 	<Form bind:price bind:id bind:name/>
 
 	<Table  on:edit={edit}/> -->
-  <h1>My File</h1>
-  <Api />
+  <h1>Git Users Data</h1>
+  <Gitusers />
 </main>
 
 <style>
