@@ -1,17 +1,18 @@
 <script lang="ts">
-  import Scoreboard from "./components/Scoreboard.svelte";
+  // import Scoreboard from "./components/Scoreboard.svelte";
+  import Apifetch from "./components/Apifetch.svelte";
 </script>
 
 <main>
-  <h1>Player Scoreboard</h1>
-  <Scoreboard />
+  <h1>API FETCH</h1>
+  <Apifetch />
 </main>
 
 <style>
   main {
     text-align: center;
     padding: 1em;
-    max-width: 250px;
+    max-width: 500px;
     margin: 0 auto;
   }
   h1 {
