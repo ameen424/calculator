@@ -1,11 +1,12 @@
 <script lang="ts">
   // import Scoreboard from "./components/Scoreboard.svelte";
-  import Apifetch from "./components/Apifetch.svelte";
+  // import Apifetch from "./components/Apifetch.svelte";
+  import Table from "./components/Table.svelte";
 </script>
 
 <main>
-  <h1>API FETCH</h1>
-  <Apifetch />
+  <h1>Data Entry</h1>
+  <Table />
 </main>
 
 <style>
