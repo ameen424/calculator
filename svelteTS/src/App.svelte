@@ -2,13 +2,14 @@
   // import Scoreboard from "./components/Scoreboard.svelte";
   // import Apifetch from "./components/Apifetch.svelte";
   // import Table from "./components/Table.svelte";
-  import Insert from "./components/Insert.svelte";
+  // import Insert from "./components/Insert.svelte";
+  import Git from "./components/Git.svelte";
 </script>
 
 <main>
-  <h1>Data Entry to the table</h1>
+  <h1>Data Entry</h1>
 
-  <Insert />
+  <Git />
 </main>
 
 <style>
