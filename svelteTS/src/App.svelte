@@ -3,13 +3,14 @@
   // import Apifetch from "./components/Apifetch.svelte";
   // import Table from "./components/Table.svelte";
   // import Insert from "./components/Insert.svelte";
-  import Git from "./components/Git.svelte";
+  // import Git from "./components/Git.svelte";
+  import Sort from "./components/Sort.svelte";
 </script>
 
 <main>
   <h1>Data Entry</h1>
 
-  <Git />
+  <Sort />
 </main>
 
 <style>
