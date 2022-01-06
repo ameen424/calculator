@@ -18,6 +18,16 @@
     return 0;
   }
 
+  function num(x, y) {
+    if (x.id < y.id) {
+      return -1;
+    }
+    if (x.id > y.id) {
+      return 1;
+    }
+    return 0;
+  }
+
   const loadData = async () => {
     loadfile = true;
     const res = await fetch(API);
@@ -39,14 +49,19 @@
   <button
     on:click={() => {
       getdata = [...getdata, { id: id, login: login }];
-      getdata.sort(compare);
     }}>Add</button
   >
   <br />
   <button
     on:click={() => {
       sorteddata = getdata.sort(compare);
-    }}>Sort</button
+    }}>Sort Names</button
+  >
+
+  <button
+    on:click={() => {
+      sorteddata = getdata.sort(num);
+    }}>Sort ID</button
   >
 
   <button
