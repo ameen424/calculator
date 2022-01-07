@@ -6,6 +6,12 @@
   let login: string;
   let sorteddata = [];
 
+  function userExists(n1) {
+    return getdata.some(function (el) {
+      return el.id == n1;
+    });
+  }
+
   function compare(a, b) {
     let A = a.login.toUpperCase();
     let B = b.login.toUpperCase();
@@ -48,7 +54,11 @@
 
   <button
     on:click={() => {
-      getdata = [...getdata, { id: id, login: login }];
+      if (!userExists(id)) {
+        getdata = [...getdata, { id: id, login: login }];
+      } else {
+        alert("ID already exists");
+      }
     }}>Add</button
   >
   <br />

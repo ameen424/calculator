@@ -4,6 +4,13 @@
     [];
   let id: number;
   let title: string;
+  let sortednames = [];
+
+  function userExists(n1) {
+    return data.some(function (el) {
+      return el.id == n1;
+    });
+  }
 
   const loadData = async () => {
     loading = true;
@@ -28,7 +35,11 @@
 
   <button
     on:click={() => {
-      data = [...data, { userId: 1, id: id, title: title, body: "" }];
+      if (!userExists(id)) {
+        data = [...data, { userId: 1, id: id, title: title, body: "" }];
+      } else {
+        alert("ID already exists");
+      }
       //   spread operator
     }}>Add</button
   >
