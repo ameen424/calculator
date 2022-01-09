@@ -4,12 +4,13 @@
   // import Table from "./components/Table.svelte";
   // import Insert from "./components/Insert.svelte";
   // import Git from "./components/Git.svelte";
-  import Sort from "./components/Sort.svelte";
+  // import Sort from "./components/Sort.svelte";
+  import Post from "./components/Post.svelte";
 </script>
 
 <main>
-  <h1>Data Entry</h1>
-  <Sort />
+  <h1>Push Data</h1>
+  <Post />
 </main>
 
 <style>
