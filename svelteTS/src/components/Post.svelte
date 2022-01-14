@@ -1,15 +1,18 @@
 <script lang="ts">
-  let foo;
-  let bar;
-  let result = "";
+  let Title: string;
+  let Body: string;
+  let result: any = "";
+  let jsondata: { title: string; body: string } = { title: "", body: "" };
 
   async function doPost() {
-    const res = await fetch("https://httpbin.org/post", {
+    jsondata.title = Title;
+    jsondata.body = Body;
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
-      body: JSON.stringify({
-        foo,
-        bar,
-      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(jsondata),
     });
 
     const json = await res.json();
@@ -17,11 +20,27 @@
   }
 </script>
 
-<input bind:value={foo} />
-<input bind:value={bar} />
+<h2>POST METHOD</h2>
+<button
+  class="button"
+  type="button"
+  on:click={() => {
+    doPost();
+  }}
+>
+  Post it
+</button>
 <br />
-<button type="button" on:click={doPost}> Post it. </button>
-<p>Result:</p>
-<pre>
+<input bind:value={Title} placeholder="Enter Name" /><br />
+<input bind:value={Body} placeholder="Enter Body" />
+<p style="font-weight : bold">Result:</p>
+<pre style="font-size:large">
 {result}
 </pre>
+
+<style>
+  .button {
+    color: white;
+    background-color: blue;
+  }
+</style>
