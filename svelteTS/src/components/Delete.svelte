@@ -1,11 +1,6 @@
 <script lang="ts">
   let result: any = "";
   let Id: number;
-  //   let jsondata: { Id: number; title: string; body: string } = {
-  //     Id,
-  //     title: "",
-  //     body: "",
-  //   };
 
   async function Delete() {
     const res = await fetch(
