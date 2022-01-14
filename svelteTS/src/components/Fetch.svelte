@@ -2,7 +2,7 @@
   let file: boolean = false;
   let displaydata: boolean = false;
   let getdata: any = "";
-  let API = "https://jsonplaceholder.typicode.com/posts";
+  let API: string;
 
   const loadData = async () => {
     file = true;
@@ -15,6 +15,8 @@
     }
   };
 </script>
+
+<input bind:value={API} placeholder="Enter Api" /> <br />
 
 <button
   class="button"

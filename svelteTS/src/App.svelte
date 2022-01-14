@@ -12,6 +12,7 @@
   import Delete from "./components/Delete.svelte";
   import Tab from "./components/Tab.svelte";
   import TabItems from "./components/TabItems.svelte";
+  import Git from "./components/Git.svelte";
 </script>
 
 <main>
@@ -28,6 +29,9 @@
     </TabItems>
     <TabItems label="DELETE">
       <Delete />
+    </TabItems>
+    <TabItems label="IMAGE API">
+      <Git />
     </TabItems>
   </Tab>
 </main>

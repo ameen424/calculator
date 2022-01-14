@@ -1,7 +1,7 @@
 <script lang="ts">
   let loadfile: boolean = false;
   let getdata: any = "";
-  let API: string = "https://api.github.com/users";
+  let API: string = "";
   let id: number;
   let login: string;
 
@@ -18,7 +18,9 @@
 </script>
 
 <main>
-  <input bind:value={id} placeholder="Enter Id" />
+  <h4>Enter URL</h4>
+  <input bind:value={API} placeholder="Enter Api " /> <br /> <br />
+  <input bind:value={id} placeholder="Enter Id" /> <br />
   <input bind:value={login} placeholder="Enter Login " />
   <br />
 
